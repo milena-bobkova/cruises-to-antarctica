@@ -1,0 +1,149 @@
+.features {
+  background-image: url("../img/features-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-light-blue;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/features-back-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $background-light-blue;
+  }
+
+  @include tablet {
+    background-image: url("../img/features-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/features-back-tablet@2x.jpg");
+    }
+  }
+
+  @include mobile {
+    background-image: url("../img/features-back-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/features-back-mobile@2x.jpg");
+    }
+  }
+}
+
+.features__container {
+  margin: 0 auto;
+  padding: 110px 0 120px;
+
+  width: calc(100% - 206px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 100px 0;
+
+    width: calc(100% - 90px);
+  }
+
+  @include mobile {
+    padding: 55px 0 65px;
+
+    width: calc(100% - 30px);
+  }
+}
+
+.features h2 {
+  padding-bottom: 50px;
+
+  @include mobile {
+    padding-bottom: 35px;
+  }
+}
+
+.features__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.features__item {
+  padding: 30px 2.5% 25px;
+  width: 31%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+
+  background-color: $white;
+
+  h3 {
+    @include reset;
+
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  p {
+    @include reset;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  span {
+    display: block;
+  }
+
+  @include tablet {
+    padding: 25px 2% 20px 2.7%;
+
+    width: 30%;
+
+    span {
+      display: inline;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+    padding: 25px 7% 20px;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+
+      width: 70%;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.features__icon {
+  padding-bottom: 20px;
+
+  height: 30px;
+
+  @include tablet {
+    padding-bottom: 20px;
+
+    height: 25px;
+  }
+}
