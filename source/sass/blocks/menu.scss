@@ -1,0 +1,51 @@
+.menu {
+  @include list-reset;
+
+  display: flex;
+  justify-content: flex-end;
+
+  width: 70%;
+
+  @include tablet {
+    width: 74%;
+  }
+
+  @include mobile {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menu__item {
+  margin-right: 4%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 4.5%;
+  }
+
+  @include mobile {
+    width: calc(100% - 30px);
+
+    &:last-child {
+      margin: 0 auto;
+    }
+  }
+}
+
+.menu__link {
+  white-space: nowrap;
+  color: $white;
+  font-weight: 500;
+  line-height: 20px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
