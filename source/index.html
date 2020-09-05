@@ -41,6 +41,11 @@
 </head>
 
 <body>
+
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
     <div class="page-header__container">
       <nav class="page-header__navigation page-header__navigation--closed page-header__navigation--nojs">
@@ -80,57 +85,63 @@
     </div>
   </header>
 
+  <main class="page-main">
+
+  </main>
+
   <footer class="page-footer">
-    <nav class="page-footer__navigation navigation">
-      <a class="page-footer__logo logo">
-        <img src="img/logo.svg" width="70" height="38" alt="Логотип турагенства">
-      </a>
-      <ul class="page-footer__menu menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <span>Преимущества</span>
+    <div class="page-footer__container">
+      <nav class="page-footer__navigation navigation">
+        <a class="page-footer__logo logo">
+          <img src="img/logo.svg" width="70" height="38" alt="Логотип турагенства">
+        </a>
+        <ul class="page-footer__menu menu">
+          <li class="page-footer__item menu__item">
+            <a class="page-footer__link menu__link" href="#">
+              <span>Преимущества</span>
+            </a>
+          </li>
+          <li class="page-footer__item menu__item">
+            <a class="page-footer__link menu__link" href="#">
+              <span>Направления</span>
+            </a>
+          </li>
+          <li class="page-footer__item menu__item">
+            <a class="page-footer__link menu__link" href="#">
+              <span>Ближайшие круизы</span>
+            </a>
+          </li>
+          <li class="page-footer__item menu__item">
+            <a class="page-footer__link menu__link" href="#">
+              <span>Контакты</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="page-footer__socials">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#" aria-label="Фейсбук">
+            <svg width="100%" height="100%" viewBox="0 0 20 20">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <span>Направления</span>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#" aria-label="Инстаграм">
+            <svg width="100%" height="100%" viewBox="0 0 20 20">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
           </a>
         </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <span>Ближайшие круизы</span>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            <span>Контакты</span>
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#" aria-label="Твиттер">
+            <svg width="100%" height="100%" viewBox="0 0 20 20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
           </a>
         </li>
       </ul>
-    </nav>
-    <ul class="page-footer__socials socials">
-      <li class="socials__item">
-        <a class="socials__link" href="#" aria-label="Фейсбук">
-          <svg class="socials__icon" width="11" height="20">
-            <use xlink:href="#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#" aria-label="Инстаграм">
-          <svg class="socials__icon" width="20" height="20">
-            <use xlink:href="#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link" href="#" aria-label="Твиттер">
-          <svg class="socials__icon" width="20" height="16">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+    </div>
   </footer>
   <script src="js/script.js"></script>
 </body>
