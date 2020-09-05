@@ -153,9 +153,16 @@ a {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        .page-header__navigation--opened .page-header__logo img {
-          -webkit-mask: url("../img/logo-mobile-blue.svg") no-repeat center;
-                  mask: url("../img/logo-mobile-blue.svg") no-repeat center; }
+        .page-header__navigation--opened .page-header__logo {
+          position: relative; }
+          .page-header__navigation--opened .page-header__logo::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 42px;
+            height: 22px;
+            content: "";
+            background-image: url("../img/logo-mobile-blue.svg"); }
         .page-header__navigation--opened .page-header__menu {
           position: absolute;
           top: 42px;
@@ -180,8 +187,8 @@ a {
           .page-header__navigation--opened .page-header__icon::before, .page-header__navigation--opened .page-header__icon::after {
             content: "";
             position: absolute;
-            top: 10px;
-            left: 2px;
+            top: 8px;
+            left: 0;
             width: 20px;
             height: 2px;
             background-color: #011c40; }
@@ -195,7 +202,7 @@ a {
         position: initial;
         background-color: #f9f9fd;
         display: block; }
-        .page-header__navigation--nojs .page-header__logo object {
+        .page-header__navigation--nojs .page-header__logo img {
           -webkit-mask: url("../img/logo-mobile-blue.svg") no-repeat center;
                   mask: url("../img/logo-mobile-blue.svg") no-repeat center; }
         .page-header__navigation--nojs .page-header__menu {

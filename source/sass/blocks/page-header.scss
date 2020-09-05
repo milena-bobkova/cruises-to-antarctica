@@ -108,6 +108,7 @@
           height: 2px;
 
           background-color: $white;
+          opacity: 1;
           transform: rotate(0);
         }
 
@@ -130,8 +131,18 @@
       display: flex;
       flex-wrap: wrap;
 
-      .page-header__logo img {
-        mask: url("../img/logo-mobile-blue.svg") no-repeat center;
+      .page-header__logo {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 42px;
+          height: 22px;
+          content: "";
+          background-image: url("../img/logo-mobile-blue.svg");
+        }
       }
 
       .page-header__menu {
@@ -171,13 +182,14 @@
           content: "";
 
           position: absolute;
-          top: 10px;
-          left: 2px;
+          top: 8px;
+          left: 0;
 
           width: 20px;
           height: 2px;
 
           background-color: $blue;
+          opacity: 1;
         }
 
         &::before {
@@ -195,8 +207,18 @@
       background-color: $white;
       display: block;
 
-      .page-header__logo object {
-        mask: url("../img/logo-mobile-blue.svg") no-repeat center;
+      .page-header__logo {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 42px;
+          height: 22px;
+          content: "";
+          background-image: url("../img/logo-mobile-blue.svg");
+        }
       }
 
       .page-header__menu {
