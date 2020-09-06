@@ -1,0 +1,346 @@
+.catalog {
+  margin: 0 auto;
+  padding: 110px 0 120px;
+  width: calc(100% - 206px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 20px;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  @include tablet {
+    padding: 90px 0 100px;
+    width: calc(100% - 90px);
+  }
+
+  @include mobile {
+    padding: 60px 0 65px;
+    width: calc(100% - 30px);
+  }
+}
+
+.catalog__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.catalog__item {
+  margin-top: 30px;
+  padding: 27px 25px;
+  width: 22.4%;
+  min-height: 386px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-blue;
+
+  &--astoria {
+    background-image: url("../img/astoria-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/astoria-desktop@2x.jpg");
+    }
+  }
+
+  &--elaine {
+    background-image: url("../img/minion-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/minion-desktop@2x.jpg");
+    }
+  }
+
+  &--atlantis {
+    background-image: url("../img/atlantis-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/atlantis-desktop@2x.jpg");
+    }
+  }
+
+  &--odysseus {
+    background-image: url("../img/odysseus-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/odysseus-desktop@2x.jpg");
+    }
+  }
+
+  &--olimpia {
+    background-image: url("../img/olimpia-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/olimpia-desktop@2x.jpg");
+    }
+  }
+
+  &--aurora {
+    background-image: url("../img/aurora-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/aurora-desktop@2x.jpg");
+    }
+  }
+
+  &--leonor {
+    background-image: url("../img/leonor-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/leonor-desktop@2x.jpg");
+    }
+  }
+
+  &--minion {
+    background-image: url("../img/minion-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/minion-desktop@2x.jpg");
+    }
+  }
+
+  &:hover {
+    background-image: none;
+    background-color: $blue;
+
+    h3 {
+      order: 0;
+    }
+
+    .catalog__description {
+      opacity: 1;
+    }
+
+    .catalog__link {
+      opacity: 1;
+    }
+  }
+
+  @include tablet {
+    width: 45%;
+
+    padding: 30px 35px;
+
+    &--astoria {
+      background-image: url("../img/astoria-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/astoria-tablet@2x.jpg");
+      }
+    }
+
+    &--elaine {
+      background-image: url("../img/minion-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/minion-tablet@2x.jpg");
+      }
+    }
+
+    &--atlantis {
+      background-image: url("../img/atlantis-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/atlantis-tablet@2x.jpg");
+      }
+    }
+
+    &--odysseus {
+      background-image: url("../img/odysseus-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/odysseus-tablet@2x.jpg");
+      }
+    }
+
+    &--olimpia {
+      background-image: url("../img/olimpia-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/olimpia-tablet@2x.jpg");
+      }
+    }
+
+    &--aurora {
+      background-image: url("../img/aurora-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/aurora-tablet@2x.jpg");
+      }
+    }
+
+    &--leonor {
+      background-image: url("../img/leonor-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/leonor-tablet@2x.jpg");
+      }
+    }
+
+    &--minion {
+      background-image: url("../img/minion-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/minion-tablet@2x.jpg");
+      }
+    }
+  }
+
+  @include mobile {
+    width: 93%;
+
+    padding: 20px 25px;
+
+    &--astoria {
+      background-image: url("../img/astoria-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/astoria-mobile@2x.jpg");
+      }
+    }
+
+    &--elaine {
+      background-image: url("../img/minion-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/minion-mobile@2x.jpg");
+      }
+    }
+
+    &--atlantis {
+      background-image: url("../img/atlantis-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/atlantis-mobile@2x.jpg");
+      }
+    }
+
+    &--odysseus {
+      background-image: url("../img/odysseus-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/odysseus-mobile@2x.jpg");
+      }
+    }
+
+    &--olimpia {
+      background-image: url("../img/olimpia-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/olimpia-mobile@2x.jpg");
+      }
+    }
+
+    &--aurora {
+      background-image: url("../img/aurora-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/aurora-mobile@2x.jpg");
+      }
+    }
+
+    &--leonor {
+      background-image: url("../img/leonor-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/leonor-mobile@2x.jpg");
+      }
+    }
+
+    &--minion {
+      background-image: url("../img/minion-mobile@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/minion-mobile@2x.jpg");
+      }
+    }
+  }
+}
+
+.catalog__item h3 {
+  @include reset;
+
+  width: 100%;
+
+  order: 1;
+  align-self: flex-end;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: $white;
+}
+
+.catalog__description {
+  @include reset;
+
+  margin-top: 12px;
+
+  opacity: 0;
+
+  font-size: 14px;
+  line-height: 140%;
+  color: $white;
+
+  width: 100%;
+
+  dt {
+    font-weight: 500;
+  }
+
+  dd {
+    @include reset;
+
+    margin-bottom: 13px;
+
+    font-weight: 400;
+    color: $grey;
+
+    @include tablet {
+      max-height: 38px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.catalog__link {
+  opacity: 0;
+
+  padding: 10px 10%;
+  margin: 5px 0;
+
+  width: 100%;
+
+  align-self: flex-end;
+
+  background-color: $white;
+
+  color: $blue;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+
+  @include tablet {
+    margin-top: 17px;
+  }
+
+  @include mobile {
+    margin-bottom: 10px;
+  }
+}
