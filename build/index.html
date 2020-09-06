@@ -61,12 +61,12 @@
             </a>
           </li>
           <li class="page-header__item menu__item">
-            <a class="page-header__link menu__link" href="#">
+            <a class="page-header__link menu__link" href="#routes">
               <span>Направления</span>
             </a>
           </li>
           <li class="page-header__item menu__item">
-            <a class="page-header__link menu__link" href="#">
+            <a class="page-header__link menu__link" href="#cruises">
               <span>Ближайшие круизы</span>
             </a>
           </li>
@@ -85,7 +85,7 @@
   </header>
 
   <main class="page-main">
-    <section class="page-main__section trip">
+    <section class="page-main__section trip" id="routes">
       <div class="trip__info">
         <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
@@ -105,7 +105,7 @@
         <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@2x.jpg 2x" width="560" height="301" alt="Пингвины">
       </picture>
     </section>
-    <section class="page-section features" id="features">
+    <section class="page-main__section features" id="features">
       <div class="features__container">
         <h2>Преимущества</h2>
         <ul class="features__list">
@@ -146,7 +146,7 @@
         </Li></Li></ul>
       </div>
     </section>
-    <section class="page-main__section catalog">
+    <section class="page-main__section catalog" id="cruises">
       <h2>Ближайшие круизы</h2>
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--astoria">
@@ -263,6 +263,39 @@
         </li>
       </ul>
     </section>
+    <section class="page-main __section booking">
+      <div class="booking__container">
+        <div class="booking__info">
+          <h2>Раннее бронирование</h2>
+          <p>Забронируйте тур за&nbsp;3-&nbsp;6&nbsp;месяцев
+            до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+        </div>
+        <form class="booking__form" method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru" autocomplete="off">
+          <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+          <label aria-label="Имя">
+            <input type="text" name="name" placeholder="Валерия" required="">
+          </label>
+          <label aria-label="Телефон">
+            <input type="tel" name="phone" placeholder="89236889975" required="">
+          </label>
+          <label aria-label="Электронная почта">
+            <input type="email" name="mail" placeholder="grishaewa.lera@gmail.com" required="">
+          </label>
+          <div class="booking__checkbox">
+            <label aria-label="Обработка данных">
+              <input class="visually-hidden" type="checkbox" name="data" placeholder="grishaewa.lera@gmail.com" aria-label="Обработка данных" checked="" required="">
+              <span class="booking__tick-field">
+                <svg width="12" height="8" viewBox="0 0 12 8">
+                  <use xlink:href="#icon-tick"></use>
+                </svg>
+              </span>
+              <span>Я согласен на обработку моих&nbsp;персональных данных</span>
+            </label>
+          </div>
+          <button class="booking__button" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -283,7 +316,7 @@
             </a>
           </li>
           <li class="page-footer__item menu__item">
-            <a class="page-footer__link menu__link" href="#">
+            <a class="page-footer__link menu__link" href="#cruises">
               <span>Ближайшие круизы</span>
             </a>
           </li>

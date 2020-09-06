@@ -1,15 +1,5 @@
 .page-main {
-  height: 3330px;
-
   background-color: $white;
-
-  @include tablet {
-    height: 4304px;
-  }
-
-  @include mobile {
-    height: 6586px;
-  }
 }
 
 .page-main h2 {

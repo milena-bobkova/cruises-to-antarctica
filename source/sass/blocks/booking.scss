@@ -1,0 +1,227 @@
+.booking {
+  background-image: url("../img/early-booking-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $background-medium-blue;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/early-booking-back-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $background-medium-blue;
+  }
+
+  @include tablet {
+    background-image: url("../img/early-booking-back-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/early-booking-back-tablet@2x.jpg");
+    }
+  }
+
+  @include mobile {
+    background-image: url("../img/early-booking-back-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/early-booking-back-mobile@2x.jpg");
+    }
+  }
+}
+
+.booking__container {
+  margin: 0 auto;
+  padding: 50px 0;
+
+  width: calc(100% - 326px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    padding: 90px 0;
+
+    width: calc(100% - 348px);
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include mobile {
+    padding: 60px 0;
+
+    width: calc(100% - 30px);
+  }
+}
+
+.booking__info {
+  margin-right: 7%;
+
+  width: 50%;
+
+  @include tablet {
+    margin-right: 0;
+    margin-bottom: 55px;
+
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+.booking__info h2 {
+  @include reset;
+
+  margin-bottom: 6px;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+
+  @include tablet {
+    margin-bottom: 0;
+
+    font-size: 34px;
+    line-height: 150%;
+  }
+
+  @include mobile {
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.booking__info p {
+  @include reset;
+
+  width: 70%;
+
+  font-size: 18px;
+  line-height: 150%;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  @include mobile {
+    margin: 0 auto;
+    width: 96%;
+
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.booking__form {
+  padding: 45px;
+
+  width: 38%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: $blue;
+
+  @include tablet {
+    width: 95%;
+  }
+
+  @include mobile {
+    padding: 35px 30px;
+    width: 100%;
+  }
+}
+
+.booking__form p {
+  @include reset;
+
+  margin-bottom: 25px;
+
+  color: $white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.booking__form label {
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.booking__form input {
+  padding: 12px;
+  margin-bottom: 20px;
+
+  width: 90%;
+
+  color: $blue;
+  cursor: pointer;
+
+  @include mobile {
+    width: 88%;
+  }
+}
+
+.booking__checkbox {
+  display: flex;
+
+  width: 100%;
+
+  font-size: 10px;
+  line-height: 130%;
+
+  color: $white;
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    width: 18px;
+  }
+}
+
+.booking__tick-field {
+  padding: 4px 2px;
+  margin-right: 5px;
+
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  background-color: $white;
+}
+
+.booking__button {
+  padding: 10px 0;
+  margin-top: 35px;
+
+  width: 100%;
+
+  background-color: $white;
+  text-align: center;
+  color: $blue;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+
+  @include mobile {
+    margin-top: 25px;
+  }
+}
