@@ -880,7 +880,7 @@ a {
           justify-content: space-between; }
   @media (max-width: 1023px) {
     .booking__container {
-      padding: 90px 0;
+      padding: 90px 0 100px;
       width: calc(100% - 348px);
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -894,7 +894,7 @@ a {
               justify-content: center; } }
   @media (max-width: 767px) {
     .booking__container {
-      padding: 60px 0;
+      padding: 60px 0 65px;
       width: calc(100% - 30px); } }
 
 .booking__info {
@@ -904,6 +904,7 @@ a {
     .booking__info {
       margin-right: 0;
       margin-bottom: 55px;
+      width: 100%;
       text-align: center; } }
   @media (max-width: 767px) {
     .booking__info {
@@ -946,7 +947,7 @@ a {
       line-height: 140%; } }
 
 .booking__form {
-  padding: 45px;
+  padding: 45px 4.2% 50px;
   width: 38%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -958,10 +959,11 @@ a {
   background-color: #011c40; }
   @media (max-width: 1023px) {
     .booking__form {
+      padding: 45px 11% 50px;
       width: 95%; } }
   @media (max-width: 767px) {
     .booking__form {
-      padding: 35px 30px;
+      padding: 35px 10% 40px;
       width: 100%; } }
 
 .booking__form p {
@@ -988,6 +990,7 @@ a {
   cursor: pointer; }
   @media (max-width: 767px) {
     .booking__form input {
+      margin-bottom: 18px;
       width: 88%; } }
 
 .booking__checkbox {
@@ -1019,7 +1022,7 @@ a {
 
 .booking__button {
   padding: 10px 0;
-  margin-top: 35px;
+  margin-top: 30px;
   width: 100%;
   background-color: #f9f9fd;
   text-align: center;
@@ -1030,6 +1033,112 @@ a {
   @media (max-width: 767px) {
     .booking__button {
       margin-top: 25px; } }
+
+.contacts {
+  margin: 0 auto;
+  padding: 120px 0;
+  width: calc(100% - 206px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1023px) {
+    .contacts {
+      padding: 100px 0;
+      width: calc(100% - 90px); } }
+  @media (max-width: 767px) {
+    .contacts {
+      padding: 60px 0 65px;
+      width: calc(100% - 30px);
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.contacts__map {
+  margin-right: 8.5%;
+  position: relative; }
+  @media (max-width: 1023px) {
+    .contacts__map {
+      margin-right: 4.5%; } }
+  @media (max-width: 767px) {
+    .contacts__map {
+      margin-right: 0;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
+
+@media (max-width: 1023px) {
+  .contacts__map img {
+    width: 324px;
+    height: 335px; } }
+
+@media (max-width: 767px) {
+  .contacts__map img {
+    width: 290px;
+    height: 316px; } }
+
+.contacts__map svg {
+  position: absolute;
+  top: 215px;
+  left: 250px;
+  z-index: 2; }
+  @media (max-width: 1023px) {
+    .contacts__map svg {
+      left: 110px; } }
+  @media (max-width: 767px) {
+    .contacts__map svg {
+      top: 225px; } }
+
+@media (max-width: 767px) {
+  .contacts__info {
+    margin-bottom: 35px; } }
+
+.contacts__info p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%; }
+  @media (max-width: 1023px) {
+    .contacts__info p {
+      margin-bottom: 25px; } }
+
+.contacts__address {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contacts__address p {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%; }
+  @media (max-width: 1023px) {
+    .contacts__address p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+.contacts__phone-link {
+  color: #011c40;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%; }
+
+.contacts svg {
+  margin-right: 10px; }
 
 .page-footer {
   background-color: #011c40; }
@@ -1046,6 +1155,7 @@ a {
           align-items: center; }
   @media (max-width: 1023px) {
     .page-footer__container {
+      padding: 48px 0;
       width: calc(100% - 90px); } }
   @media (max-width: 767px) {
     .page-footer__container {

@@ -11,6 +11,7 @@
   align-items: center;
 
   @include tablet {
+    padding: 48px 0;
     width: calc(100% - 90px);
   }
 

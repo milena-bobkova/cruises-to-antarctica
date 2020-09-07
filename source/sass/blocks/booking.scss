@@ -41,7 +41,7 @@
   justify-content: space-between;
 
   @include tablet {
-    padding: 90px 0;
+    padding: 90px 0 100px;
 
     width: calc(100% - 348px);
 
@@ -51,7 +51,7 @@
   }
 
   @include mobile {
-    padding: 60px 0;
+    padding: 60px 0 65px;
 
     width: calc(100% - 30px);
   }
@@ -65,6 +65,8 @@
   @include tablet {
     margin-right: 0;
     margin-bottom: 55px;
+
+    width: 100%;
 
     text-align: center;
   }
@@ -122,7 +124,7 @@
 }
 
 .booking__form {
-  padding: 45px;
+  padding: 45px 4.2% 50px;
 
   width: 38%;
   box-sizing: border-box;
@@ -133,11 +135,12 @@
   background-color: $blue;
 
   @include tablet {
+    padding: 45px 11% 50px;
     width: 95%;
   }
 
   @include mobile {
-    padding: 35px 30px;
+    padding: 35px 10% 40px;
     width: 100%;
   }
 }
@@ -173,6 +176,7 @@
   cursor: pointer;
 
   @include mobile {
+    margin-bottom: 18px;
     width: 88%;
   }
 }
@@ -210,7 +214,7 @@
 
 .booking__button {
   padding: 10px 0;
-  margin-top: 35px;
+  margin-top: 30px;
 
   width: 100%;
 
