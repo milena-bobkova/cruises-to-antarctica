@@ -26,9 +26,6 @@
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"); }
 
-* {
-  outline: 1px solid red; }
-
 body {
   margin: 0;
   padding: 0;
@@ -490,6 +487,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,20 +513,22 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #f9f9fd; }
   .features__item h3 {
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
+    width: 100%;
     font-weight: 500;
     font-size: 18px;
     line-height: 140%; }
   .features__item p {
     padding: 0;
     margin: 0;
+    width: 100%;
     font-size: 14px;
     line-height: 20px; }
   .features__item span {
@@ -562,16 +562,6 @@ a {
     .features__icon {
       height: 26px; } }
 
-@media (max-width: 1023px) {
-  .features__icon-pic {
-    width: 100%;
-    height: 100%; } }
-
-@media (max-width: 767px) {
-  .features__icon-pic {
-    width: 100%;
-    height: 100%; } }
-
 .catalog {
   margin: 0 auto;
   padding: 110px 0 120px;
@@ -604,6 +594,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -832,6 +823,12 @@ a {
   font-size: 14px;
   line-height: 150%;
   text-align: center; }
+  .catalog__link:hover {
+    color: rgba(1, 28, 64, 0.7);
+    background-color: #d8d8d9; }
+  .catalog__link:focus, .catalog__link:active {
+    color: rgba(1, 28, 64, 0.3);
+    background-color: rgba(216, 216, 217, 0.5); }
   @media (max-width: 1023px) {
     .catalog__link {
       margin-top: 17px; } }
@@ -947,8 +944,8 @@ a {
       line-height: 140%; } }
 
 .booking__form {
-  padding: 45px 4.2% 50px;
-  width: 38%;
+  padding: 45px 4.5% 50px;
+  width: 38.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -988,6 +985,8 @@ a {
   width: 90%;
   color: #011c40;
   cursor: pointer; }
+  .booking__form input:hover {
+    outline: 2px solid lightseagreen; }
   @media (max-width: 767px) {
     .booking__form input {
       margin-bottom: 18px;
@@ -1007,7 +1006,8 @@ a {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    cursor: pointer; }
   .booking__checkbox input {
     width: 18px; }
 
@@ -1019,6 +1019,8 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f9f9fd; }
+  .booking__tick-field:hover {
+    outline: 2px solid lightseagreen; }
 
 .booking__button {
   padding: 10px 0;
@@ -1029,7 +1031,15 @@ a {
   color: #011c40;
   font-weight: 600;
   font-size: 14px;
-  line-height: 150%; }
+  line-height: 150%;
+  cursor: pointer;
+  border: none; }
+  .booking__button:hover {
+    color: rgba(1, 28, 64, 0.7);
+    background-color: #d8d8d9; }
+  .booking__button:focus, .booking__button:active {
+    color: rgba(1, 28, 64, 0.3);
+    background-color: rgba(216, 216, 217, 0.5); }
   @media (max-width: 767px) {
     .booking__button {
       margin-top: 25px; } }
@@ -1075,12 +1085,12 @@ a {
               order: 1; } }
 
 @media (max-width: 1023px) {
-  .contacts__map img {
+  .contacts__map-iframe {
     width: 324px;
     height: 335px; } }
 
 @media (max-width: 767px) {
-  .contacts__map img {
+  .contacts__map-iframe {
     width: 290px;
     height: 316px; } }
 
@@ -1096,9 +1106,15 @@ a {
     .contacts__map svg {
       top: 225px; } }
 
-@media (max-width: 767px) {
-  .contacts__info {
-    margin-bottom: 35px; } }
+.contacts__info {
+  width: 43%; }
+  @media (max-width: 1023px) {
+    .contacts__info {
+      width: 48%; } }
+  @media (max-width: 767px) {
+    .contacts__info {
+      width: 100%;
+      margin-bottom: 35px; } }
 
 .contacts__info p {
   padding: 0;
@@ -1277,7 +1293,8 @@ a {
     line-height: 15px; } }
 
 .page-footer__socials-link {
-  display: block; }
+  display: block;
+  height: 20px; }
   .page-footer__socials-link:hover {
     opacity: 0.7; }
   @media (max-width: 1023px) {

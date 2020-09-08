@@ -36,7 +36,7 @@ gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({
-        optimizationlevel: 3
+        optimizationlevel: 2
       }),
       imagemin.mozjpeg({
         progressive: true
@@ -47,9 +47,9 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("source/img/**/content-*.{png,jpg}")
     .pipe(webp({
-      quality: 90
+      quality: 60
     }))
     .pipe(gulp.dest("build/img"));
 });

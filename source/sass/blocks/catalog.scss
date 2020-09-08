@@ -29,6 +29,8 @@
 .catalog__list {
   @include list-reset;
 
+  width: 100%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -335,6 +337,17 @@
   font-size: 14px;
   line-height: 150%;
   text-align: center;
+
+  &:hover {
+    color: rgba($blue, 0.7);
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($blue, 0.3);
+    background-color: rgba($grey, 0.5);
+  }
 
   @include tablet {
     margin-top: 17px;

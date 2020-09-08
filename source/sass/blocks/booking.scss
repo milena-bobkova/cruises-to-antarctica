@@ -124,9 +124,9 @@
 }
 
 .booking__form {
-  padding: 45px 4.2% 50px;
+  padding: 45px 4.5% 50px;
 
-  width: 38%;
+  width: 38.5%;
   box-sizing: border-box;
 
   display: flex;
@@ -175,6 +175,10 @@
   color: $blue;
   cursor: pointer;
 
+  &:hover {
+    outline: 2px solid lightseagreen;
+  }
+
   @include mobile {
     margin-bottom: 18px;
     width: 88%;
@@ -194,6 +198,7 @@
   label {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 
   input {
@@ -210,6 +215,10 @@
   box-sizing: border-box;
 
   background-color: $white;
+
+  &:hover {
+    outline: 2px solid lightseagreen;
+  }
 }
 
 .booking__button {
@@ -224,6 +233,19 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    color: rgba($blue, 0.7);
+    background-color: $grey;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba($blue, 0.3);
+    background-color: rgba($grey, 0.5);
+  }
 
   @include mobile {
     margin-top: 25px;

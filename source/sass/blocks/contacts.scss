@@ -38,7 +38,7 @@
   }
 }
 
-.contacts__map img {
+.contacts__map-iframe {
   @include tablet {
     width: 324px;
     height: 335px;
@@ -66,7 +66,15 @@
 }
 
 .contacts__info {
+  width: 43%;
+
+  @include tablet {
+    width: 48%;
+  }
+
   @include mobile {
+    width: 100%;
+
     margin-bottom: 35px;
   }
 }
