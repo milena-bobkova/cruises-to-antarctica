@@ -94,6 +94,7 @@
 
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   width: 70%;
 
@@ -201,7 +202,7 @@
     }
 
     &--opened {
-      position: relative;
+      position: fixed;
       background-color: $white;
       display: flex;
       flex-wrap: wrap;
@@ -329,6 +330,11 @@
       }
     }
   }
+}
+
+.page-header__fix {
+  position: fixed;
+  overflow: hidden;
 }
 
 .page-header__promo {

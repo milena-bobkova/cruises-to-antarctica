@@ -64,7 +64,7 @@
 
   @include tablet {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 
     width: 100%;
 
@@ -80,7 +80,7 @@
 .booking__info h2 {
   @include reset;
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   font-weight: bold;
   font-size: 40px;
@@ -110,11 +110,16 @@
     margin: 0 auto;
     width: 90%;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
   }
 
   @include mobile {
     margin: 0 auto;
     width: 96%;
+
+    display: block;
 
     font-size: 16px;
     line-height: 140%;
@@ -122,9 +127,9 @@
 }
 
 .booking__form {
-  padding: 45px 4.8%;
+  padding: 45px 4.5% 50px;
 
-  width: 29.8%;
+  width: 29.5%;
 
   display: flex;
   flex-wrap: wrap;
@@ -145,7 +150,7 @@
 .booking__form p {
   @include reset;
 
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   color: $white;
   font-weight: 500;
@@ -174,9 +179,11 @@
   padding: 12px 13px;
   margin-bottom: 20px;
 
-  width: 90%;
+  width: 100%;
 
   font-size: 14px;
+  box-sizing: border-box;
+  border-radius: 0;
 
   color: $blue;
   cursor: pointer;
@@ -187,7 +194,6 @@
 
   @include mobile {
     margin-bottom: 18px;
-    width: 87%;
   }
 }
 
@@ -212,29 +218,34 @@
   }
 }
 
-.booking__tick-field {
-  padding: 4px 2px;
+.booking__checkbox svg {
+  padding: 4px;
   margin-right: 5px;
 
-  width: 18px;
-  height: 18px;
-  box-sizing: border-box;
+  width: 10px;
+  height: 8px;
 
   background-color: $white;
+  fill: $white;
+  stroke: rgba($blue, 0);
 
   &:hover {
     outline: 2px solid lightseagreen;
   }
 
   @include mobile {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 11px;
   }
 }
 
+input[type="checkbox"]:checked + svg {
+  stroke: rgba($blue, 1);
+}
+
 .booking__button {
-  padding: 10px 0;
-  margin-top: 30px;
+  padding: 10px;
+  margin-top: 32px;
 
   width: 100%;
 
@@ -260,5 +271,7 @@
 
   @include mobile {
     margin-top: 27px;
+
+    width: 100%;
   }
 }

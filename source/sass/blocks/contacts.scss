@@ -1,6 +1,6 @@
 .contacts {
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 0 115px;
 
   width: calc(100% - 206px);
   display: flex;
@@ -89,17 +89,39 @@
   line-height: 150%;
 
   @include tablet {
+    margin-bottom: 27px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include mobile {
     margin-bottom: 25px;
+    display: block;
   }
 }
 
 .contacts__address {
   margin-bottom: 20px;
   display: flex;
+
+  width: 95%;
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .contacts__address p {
   @include reset;
+
+  width: 97%;
 
   font-weight: 400;
   font-size: 16px;
@@ -108,16 +130,39 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+.contacts__phone {
+  width: 95%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @include mobile {
+    width: 100%;
   }
 }
 
 .contacts__phone-link {
+  width: 97%;
+
   color: $blue;
   font-weight: normal;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 16px;
+  white-space: nowrap;
 }
 
 .contacts svg {
-  margin-right: 10px;
+  margin-right: 1%;
+  width: 5%;
+
+  @include tablet {
+    margin-right: 1%;
+
+    width: 8%;
+  }
 }

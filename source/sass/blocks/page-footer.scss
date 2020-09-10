@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-grow: 2;
+  width: 90%;
 
   @include mobile {
     width: 100%;
@@ -39,7 +39,7 @@
 }
 
 .page-footer__logo {
-  margin-right: 4%;
+  margin-right: 3.5%;
 
   @include tablet {
     margin-right: 4%;
@@ -73,11 +73,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 
-  width: 70%;
+  width: 84%;
 
   @include tablet {
-    width: 74%;
+    width:88%;
   }
 
   @include mobile {
@@ -93,8 +94,6 @@
 
 .page-footer__socials {
   @include list-reset;
-  flex-grow: 1;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -108,7 +107,7 @@
 }
 
 .page-footer__socials-item {
-  margin-right: 10%;
+  margin-right: 25%;
 
   width: 20px;
   height: 20px;
@@ -117,13 +116,21 @@
     margin-right: 0;
   }
 
+  @include tablet {
+    margin-right: 30%;
+  }
+
   @include mobile {
     margin-right: 5%;
   }
 }
 
 .page-footer__item {
-  margin-right: 6%;
+  margin-right: 4%;
+
+  @include tablet {
+    margin-right: 4.5%;
+  }
 
   @include mobile {
     margin: 0;
