@@ -1379,7 +1379,6 @@ input[type="checkbox"]:checked + svg {
     .page-footer__item {
       margin: 0;
       margin-bottom: 8px;
-      width: calc(100% - 30px);
       width: 100%; }
       .page-footer__item:last-child {
         margin: 0; } }

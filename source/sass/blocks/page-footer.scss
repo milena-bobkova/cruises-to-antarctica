@@ -78,7 +78,7 @@
   width: 84%;
 
   @include tablet {
-    width:88%;
+    width: 88%;
   }
 
   @include mobile {
@@ -136,8 +136,6 @@
     margin: 0;
     margin-bottom: 8px;
 
-    width: calc(100% - 30px);
-
     width: 100%;
 
     &:last-child {
@@ -151,6 +149,7 @@
   color: $white;
   font-weight: 500;
   line-height: 20px;
+
   &:hover {
     opacity: 0.7;
   }
