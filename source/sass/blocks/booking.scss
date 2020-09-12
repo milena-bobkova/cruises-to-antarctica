@@ -32,16 +32,18 @@
 
 .booking__container {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 60px;
 
-  width: calc(100% - 326px);
+  width: calc(100% - 206px);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  box-sizing: border-box;
+
   @include tablet {
-    padding: 85px 0 100px;
+    padding: 98px 0 100px;
 
     width: calc(100% - 348px);
 
@@ -51,20 +53,23 @@
   }
 
   @include mobile {
-    padding: 60px 0 65px;
+    padding: 65px 0;
 
     width: calc(100% - 30px);
   }
 }
 
 .booking__info {
-  margin-right: 11%;
+  margin-top: -8px;
+  margin-right: 2%;
 
-  width: 50%;
+  text-align: left;
+
+  width: 493px;
 
   @include tablet {
+    margin-bottom: 50px;
     margin-right: 0;
-    margin-bottom: 55px;
 
     width: 100%;
 
@@ -72,8 +77,8 @@
   }
 
   @include mobile {
-    margin-right: 0;
     margin-bottom: 35px;
+    margin-right: 0;
   }
 }
 
@@ -91,7 +96,7 @@
   }
 
   @include mobile {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     font-size: 24px;
     line-height: 130%;
@@ -101,7 +106,8 @@
 .booking__info p {
   @include reset;
 
-  width: 70%;
+  display: flex;
+  flex-direction: column;
 
   font-size: 18px;
   line-height: 150%;
@@ -109,15 +115,12 @@
   @include tablet {
     margin: 0 auto;
     width: 90%;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
   @include mobile {
     margin: 0 auto;
-    width: 96%;
+    width: 257px;
 
     display: block;
 
@@ -127,9 +130,9 @@
 }
 
 .booking__form {
-  padding: 45px 4.5% 50px;
+  padding: 44px 50px 52px;
 
-  width: 29.5%;
+  width: 303px;
 
   display: flex;
   flex-wrap: wrap;
@@ -137,12 +140,12 @@
   background-color: $blue;
 
   @include tablet {
-    padding: 45px 11.5% 50px;
-    width: 73%;
+    padding: 45px 50px 50px;
   }
 
   @include mobile {
-    padding: 35px 10% 40px;
+    margin: 0 auto;
+    padding: 35px 30px 40px;
     width: 80%;
   }
 }
@@ -150,7 +153,9 @@
 .booking__form p {
   @include reset;
 
-  margin-bottom: 23px;
+  margin-bottom: 25px;
+
+  width: 303px;
 
   color: $white;
   font-weight: 500;
@@ -158,11 +163,11 @@
   line-height: 150%;
 
   @include tablet {
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   @include mobile {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
     text-align: center;
     line-height: 140%;
@@ -176,24 +181,28 @@
 }
 
 .booking__form input {
-  padding: 12px 13px;
-  margin-bottom: 20px;
+  padding: 13.5px 14px;
+  margin-bottom: 18px;
 
   width: 100%;
 
+  font-family: inherit;
   font-size: 14px;
   box-sizing: border-box;
   border-radius: 0;
+  border: none;
 
   color: $blue;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     outline: 2px solid lightseagreen;
   }
 
   @include mobile {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    padding: 12px 14px;
   }
 }
 
@@ -212,35 +221,58 @@
     align-items: center;
     cursor: pointer;
   }
+}
 
-  input {
-    width: 18px;
+.booking__checkbox input {
+  margin-bottom: 0;
+  width: 18px;
+
+  @include mobile {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.booking__tick-field {
+  margin-right: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: $white;
+
+  @include mobile {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.booking__checkbox-text {
+  @include mobile {
+    width: 95%;
   }
 }
 
 .booking__checkbox svg {
-  padding: 4px;
-  margin-right: 5px;
-
-  width: 10px;
-  height: 8px;
-
-  background-color: $white;
   fill: $white;
-  stroke: rgba($blue, 0);
-
-  &:hover {
-    outline: 2px solid lightseagreen;
-  }
-
-  @include mobile {
-    width: 14px;
-    height: 11px;
-  }
 }
 
-input[type="checkbox"]:checked + svg {
-  stroke: rgba($blue, 1);
+.booking__checkbox input:not(:checked) + .booking__tick-field svg {
+  display: none;
+}
+
+.booking__checkbox input:checked + .booking__tick-field svg {
+  display: block;
+}
+
+.booking__checkbox input:hover + .booking__tick-field,
+.booking__checkbox input:focus + .booking__tick-field {
+  outline: 2px solid lightseagreen;
 }
 
 .booking__button {

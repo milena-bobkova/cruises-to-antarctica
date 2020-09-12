@@ -8,13 +8,13 @@
   align-items: center;
 
   @include tablet {
-    padding: 100px 0 90px;
+    padding: 92px 0;
 
     width: calc(100% - 90px);
   }
 
   @include mobile {
-    padding: 65px 0;
+    padding: 55px 0 63px;
 
     width: calc(100% - 30px);
 
@@ -27,7 +27,8 @@
   width: 45%;
 
   @include tablet {
-    width: 47.5%;
+    margin-right: 5%;
+    width: 48%;
   }
 
   @include mobile {
@@ -40,7 +41,6 @@
   padding-bottom: 25px;
 
   @include tablet {
-    margin-top: -10px;
     padding-bottom: 20px;
 
     width: 70%;

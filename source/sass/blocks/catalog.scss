@@ -8,7 +8,11 @@
   align-items: center;
 
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+
+    @include tablet {
+      margin-bottom: 21px;
+    }
 
     @include mobile {
       margin-bottom: 0;
@@ -38,13 +42,14 @@
 
 .catalog__item {
   margin-top: 30px;
-  padding: 27px 25px;
-  width: 22.4%;
+  padding: 23px 2.405%;
+  width: 22.5%;
   min-height: 386px;
   box-sizing: border-box;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,6 +121,7 @@
   }
 
   &:hover {
+    padding: 27px 2.405%;
     background-image: none;
     background-color: $blue;
 
@@ -133,9 +139,9 @@
   }
 
   @include tablet {
-    width: 45%;
+    width: 46%;
 
-    padding: 30px 35px;
+    padding: 27px 5.1%;
 
     &--astoria {
       background-image: url("../img/astoria-tablet@1x.jpg");

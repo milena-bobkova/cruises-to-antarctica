@@ -1,6 +1,6 @@
 .contacts {
   margin: 0 auto;
-  padding: 120px 0 115px;
+  padding: 120px 0;
 
   width: calc(100% - 206px);
   display: flex;
@@ -8,13 +8,13 @@
   align-items: center;
 
   @include tablet {
-    padding: 95px 0 100px;
+    padding: 100px 0;
 
     width: calc(100% - 90px);
   }
 
   @include mobile {
-    padding: 60px 0;
+    padding: 60px 0 67px;
 
     width: calc(100% - 30px);
 
@@ -29,7 +29,7 @@
   position: relative;
 
   @include tablet {
-    margin-right: 4.5%;
+    margin-right: 4%;
   }
 
   @include mobile {
@@ -39,6 +39,8 @@
 }
 
 .contacts__map-iframe {
+  display: block;
+
   @include tablet {
     width: 324px;
     height: 335px;
@@ -75,21 +77,21 @@
   @include mobile {
     width: 100%;
 
-    margin-bottom: 35px;
+    margin-bottom: 33px;
   }
 }
 
 .contacts__info p {
   @include reset;
 
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
 
   @include tablet {
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 
     display: flex;
     flex-direction: column;
@@ -109,11 +111,11 @@
   width: 95%;
 
   @include tablet {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   @include mobile {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     width: 100%;
   }
 }
@@ -158,11 +160,9 @@
 
 .contacts svg {
   margin-right: 1%;
-  width: 5%;
+  width: 22px;
 
   @include tablet {
-    margin-right: 1%;
-
-    width: 8%;
+    margin-right: 2%;
   }
 }
