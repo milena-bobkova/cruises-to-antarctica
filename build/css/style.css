@@ -572,6 +572,7 @@ a {
         display: block; } }
 
 .features__icon {
+  margin-left: 1px;
   padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -582,9 +583,11 @@ a {
   height: 32px; }
   @media (max-width: 1023px) {
     .features__icon {
+      margin-left: -2px;
       height: 26px; } }
-  @media (max-width: 1023px) {
+  @media (max-width: 767px) {
     .features__icon {
+      margin-left: -2px;
       height: 26px; } }
 
 .features__icon svg {
@@ -817,6 +820,7 @@ a {
 .catalog__item h3 {
   padding: 0;
   margin: 0;
+  margin-left: 2px;
   width: 100%;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -1222,7 +1226,7 @@ a {
   line-height: 150%; }
   @media (max-width: 1023px) {
     .contacts__info p {
-      margin-bottom: 29px;
+      margin-bottom: 28px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1238,6 +1242,10 @@ a {
       margin-bottom: 25px;
       display: block; } }
 
+.contacts svg {
+  margin-right: 1%;
+  width: 22px; }
+
 .contacts__address {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -1246,11 +1254,22 @@ a {
   width: 95%; }
   @media (max-width: 1023px) {
     .contacts__address {
-      margin-bottom: 20px; } }
+      margin-bottom: 18px; } }
   @media (max-width: 767px) {
     .contacts__address {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
       width: 100%; } }
+
+.contacts__address svg {
+  margin-left: -2px; }
+  @media (max-width: 1023px) {
+    .contacts__address svg {
+      margin-left: 0;
+      padding-top: 5px;
+      padding-right: 2%; } }
+  @media (max-width: 767px) {
+    .contacts__address svg {
+      margin-left: -2px; } }
 
 .contacts__address p {
   padding: 0;
@@ -1279,6 +1298,16 @@ a {
     .contacts__phone {
       width: 100%; } }
 
+.contacts__phone svg {
+  margin-left: -2px; }
+  @media (max-width: 1023px) {
+    .contacts__phone svg {
+      margin-left: 0;
+      padding-top: 4px; } }
+  @media (max-width: 767px) {
+    .contacts__phone svg {
+      margin-left: -2px; } }
+
 .contacts__phone-link {
   width: 97%;
   color: #011c40;
@@ -1286,13 +1315,6 @@ a {
   font-size: 16px;
   line-height: 16px;
   white-space: nowrap; }
-
-.contacts svg {
-  margin-right: 1%;
-  width: 22px; }
-  @media (max-width: 1023px) {
-    .contacts svg {
-      margin-right: 2%; } }
 
 .page-footer {
   background-color: #011c40; }

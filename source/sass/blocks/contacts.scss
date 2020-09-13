@@ -91,7 +91,7 @@
   line-height: 150%;
 
   @include tablet {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 
     display: flex;
     flex-direction: column;
@@ -104,6 +104,11 @@
   }
 }
 
+.contacts svg {
+  margin-right: 1%;
+  width: 22px;
+}
+
 .contacts__address {
   margin-bottom: 20px;
   display: flex;
@@ -111,12 +116,26 @@
   width: 95%;
 
   @include tablet {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   @include mobile {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     width: 100%;
+  }
+}
+
+.contacts__address svg {
+  margin-left: -2px;
+
+  @include tablet {
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 2%;
+  }
+
+  @include mobile {
+    margin-left: -2px;
   }
 }
 
@@ -148,6 +167,19 @@
   }
 }
 
+.contacts__phone svg {
+  margin-left: -2px;
+
+  @include tablet {
+    margin-left: 0;
+    padding-top: 4px;
+  }
+
+  @include mobile {
+    margin-left: -2px;
+  }
+}
+
 .contacts__phone-link {
   width: 97%;
 
@@ -156,13 +188,4 @@
   font-size: 16px;
   line-height: 16px;
   white-space: nowrap;
-}
-
-.contacts svg {
-  margin-right: 1%;
-  width: 22px;
-
-  @include tablet {
-    margin-right: 2%;
-  }
 }

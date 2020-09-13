@@ -146,6 +146,7 @@
 }
 
 .features__icon {
+  margin-left: 1px;
   padding-bottom: 20px;
 
   display: flex;
@@ -154,10 +155,12 @@
   height: 32px;
 
   @include tablet {
+    margin-left: -2px;
     height: 26px;
   }
 
-  @include tablet {
+  @include mobile {
+    margin-left: -2px;
     height: 26px;
   }
 }
